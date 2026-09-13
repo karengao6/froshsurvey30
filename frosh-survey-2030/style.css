@@ -5,6 +5,8 @@
     --pink:#ce4993;
     --purple:#6a0d83;
     --tan: #f2b46f;
+    --olive: #7e8e56;
+    --darker-olive: #687542;
 }
 #Academics {
     background: url(https://s3.amazonaws.com/snwceomedia/pri/d4867740-8fd3-4e62-a9e9-77a5aad61ac5.original.jpg);
@@ -320,7 +322,7 @@ button {
   /* padding: 40px 40px; */
   padding-top: .3rem;
   padding-bottom: .3rem;
-  background-color: var(--orange);
+  background-color: var(--olive);
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: large;
@@ -366,14 +368,14 @@ button {
 }
 
 .graph-button.active {
-    background-color: var(--orange);
+    background-color: var(--olive);
 }
 a {
-  color: var(--orange);
+  color: var(--olive);
   text-decoration: none;
 }
 button:hover {
-  background-color: rgb(255, 160, 37);
+  background-color: var(--darker-olive);
 }
 /* Collapsible Nav Container */
 .collapsible-nav {
@@ -408,7 +410,7 @@ button:hover {
    /* Centered within the container */
   width: 40px;
   height: 40px;
-  background-color: var(--orange);
+  background-color: var(--olive);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -477,7 +479,7 @@ button:hover {
 
 #intro-overlay h1 {
     font-size: 3rem;
-    color: var(--orange, #e67e22);
+    color: var(--olive);
     font-family: sofia-pro, sans-serif;
     letter-spacing: 2px;
 }
