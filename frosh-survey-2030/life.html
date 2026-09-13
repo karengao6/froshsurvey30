@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frosh Survey 2029</title>
+    <meta name="description" content="College Life section of the Frosh Survey for the Princeton Class of 2029.">
+
+    <!-- Social media embed contents. ⚠️ FILL IN SQUARE BRACKETS. ⚠️ -->
+    <meta property="og:url" content="https://projects.dailyprincetonian.com/senior-survey-2029/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frosh Survey 2029">
+    <meta property="og:description" content="College Life section of the Frosh Survey for the Princeton Class of 2029.">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/pri/016a2c3c-9cd4-4906-94d8-c05bba51a32c.original.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Defines standard character set. Useful for ensuring curly quotes
+        aren't corrupted by different encodings. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Ensures mobile layout works. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to our logo for favicon. -->
+    <link rel="icon" type="image/png"
+          href="https://dirgyzwl2hnqq.cloudfront.net/ff9419fb986f760c1b0b24d4b9046051/dist/img/favicons/apple-icon-57x57.png"/>
+
+    <!-- A reference to our brand fonts. -->
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
+
+    <!-- Reference to your custom CSS. -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="navbar.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Reference to your custom scripting. -->
+    <script src="script.js" defer></script>
+	<script type="module" src="navbar.js" defer></script>
+
+    <!-- Global site tag for Google Analytics. LEAVE COMMENTED OUT UNTIL PUBLISHED -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0QFG1LJXS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-H0QFG1LJXS');
+    </script> 
+</head>
+
+<body style="background-color: #EFE5DA;">
+	<!-- Template for the header. -->
+	<nav id="top-nav">
+        <!-- Optional hamburger menu. Remove this i tag if your project doesn't have header navigation -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <div id="left-top-nav">
+			<a href="https://dailyprincetonian.com">
+				<img id="logo" alt="The Daily Princetonian logo"
+					 src="https://dirgyzwl2hnqq.cloudfront.net/8ab5ccf6483af37484451354a9d9e4e3/dist/img/prince_logo_scrolled.png"/>
+			</a>
+			<div class="project-name"><a href="./index.html">&ensp;|&ensp;Frosh Survey 2029</a></div>
+		</div>
+        <!-- Optional header navigation. The nav-links will jump to elements with a specific id.
+            Feel free to remove the two divs below if your project doesn't need header navigation. -->
+        <div id="nav-links">
+            <a href="./demo.html">Demographics</a>
+            <a href="./life.html">Lifestyle</a>
+            <a href="./academics.html">Academics</a>
+            <a href="views.html">Views</a>
+            <a href="./about.html">About</a>
+        </div>
+	</nav>
+
+
+	<!-- Put your article's content in here -->
+    <!-- hero -->
+    <intro id ="life-intro"> 
+            <h1>College Life</h1>
+            <p>
+                Who’s had their first kiss, sip of alcohol, or puff of a joint? Read more to find out what is happening behind the classroom scenes of the Class of 2029 — from alcohol and drug use to sex, eating club expectations, and daily phone habits. 
+            </p>
+            <div class="intro-buttons">
+            <a href="#recreation"><button>Recreation</button></a>
+            <a href="#sex-and-romance"><button>Sex and Romance</button></a>
+            <a href="#drugs-and-alcohol"><button>Drugs and Alcohol</button></a>
+            <a href="#nightlife"><button>Nightlife</button></a>
+            </div>
+        </intro>
+<div class="section-container" id="lifestyle-section-container">
+    <section id="recreation">
+        <h2>Recreation</h2>
+        <p>
+            More than half of students reported never consuming energy drinks, though 2.1 percent said they drank them daily. Phone use was far more common, with 20 percent of students reporting spending four to five hours on their phones each day and five percent spending over 10 hours every day. 
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="anticipated-eating-club-membership-btn" data-graph="anticipated-eating-club-membership" onclick="showGraph(this.dataset.graph, this)">Anticipated Eating Club Membership</button>
+                <button class="graph-button" id="phone-hours-btn" data-graph="phone-hours" onclick="showGraph(this.dataset.graph, this)">Phone Hours</button>
+                <button class="graph-button" id="age-of-first-smartphone-btn" data-graph="age-of-first-smartphone" onclick="showGraph(this.dataset.graph, this)">Age of First Smartphone</button>
+                <button class="graph-button" id="age-first-smartphone-by-community-type-btn" data-graph="age-first-smartphone-by-community-type" onclick="showGraph(this.dataset.graph, this)">Age First Smartphone by Community Type</button>
+                <button class="graph-button" id="phone-use-by-secondary-school-btn" data-graph="phone-use-by-secondary-school" onclick="showGraph(this.dataset.graph, this)">Phone Use by Secondary School</button>
+                <button class="graph-button" id="energy-drink-consumption-by-hours-studying-btn" data-graph="energy-drink-consumption-by-hours-studying" onclick="showGraph(this.dataset.graph, this)">Energy Drink Consumption by Hours Studying</button>
+            </div>
+            <div class="graph-display">
+                <div id="anticipated-eating-club-membership" class="graph" style="display: flex !important;">
+                    <iframe title="Anticipated Eating Club Membership" aria-label="Pie Chart" id="datawrapper-chart-4Lw6Q" src="https://datawrapper.dwcdn.net/4Lw6Q/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="phone-hours" class="graph" style="">
+                    <iframe title="Phone Hours" aria-label="Column Chart" id="datawrapper-chart-IJPE5" src="https://datawrapper.dwcdn.net/IJPE5/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="age-of-first-smartphone" class="graph" style="">
+                    <iframe title="Age of First Smartphone" aria-label="Column Chart" id="datawrapper-chart-81Ui1" src="https://datawrapper.dwcdn.net/81Ui1/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="age-first-smartphone-by-community-type" class="graph" style="">
+                    <iframe title="Age First Smartphone by Community Type" aria-label="Column Chart" id="datawrapper-chart-CqBmC" src="https://datawrapper.dwcdn.net/CqBmC/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="phone-use-by-secondary-school" class="graph" style="">
+                    <iframe title="Phone Use by Secondary School" aria-label="Column Chart" id="datawrapper-chart-qLOqr" src="https://datawrapper.dwcdn.net/qLOqr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="energy-drink-consumption-by-hours-studying" class="graph" style="">
+                    <iframe title="Energy Drink Consumption by Hours Studying" aria-label="Column Chart" id="datawrapper-chart-Of5zy" src="https://datawrapper.dwcdn.net/Of5zy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sex-and-romance">
+        <h2>Sex and Romance</h2>
+        <p>
+            Recruited athletes scored on and off the field, with 46 percent of athletes having reported having sex, compared to only 24 percent of non-athletes. The most common first time for respondents’ first sex was their senior year of high school, accounting for 9.37 percent of first sexual experiences. However, 43.7 percent of the Class of 2029 has yet to have their first kiss.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="first-kiss-btn" data-graph="first-kiss" onclick="showGraph(this.dataset.graph, this)">First Kiss</button>
+                <button class="graph-button" id="sex-btn" data-graph="sex" onclick="showGraph(this.dataset.graph, this)">Sex</button>
+                <button class="graph-button" id="relationship-status-btn" data-graph="relationship-status" onclick="showGraph(this.dataset.graph, this)">Relationship Status</button>
+                <button class="graph-button" id="sexual-partners-btn" data-graph="sexual-partners" onclick="showGraph(this.dataset.graph, this)">Sexual Partners</button>
+                <button class="graph-button" id="number-of-past-relationships-btn" data-graph="number-of-past-relationships" onclick="showGraph(this.dataset.graph, this)">Number of Past Relationships</button>
+                <button class="graph-button" id="sex-first-times-btn" data-graph="sex-first-times" onclick="showGraph(this.dataset.graph, this)">Sex First Times</button>
+                <button class="graph-button" id="sex-frequency-btn" data-graph="sex-frequency" onclick="showGraph(this.dataset.graph, this)">Sex Frequency</button>
+                <button class="graph-button" id="sex-by-gender-btn" data-graph="sex-by-gender" onclick="showGraph(this.dataset.graph, this)">Sex by Gender</button>
+                <button class="graph-button" id="sex-by-recruited-athlete-btn" data-graph="sex-by-recruited-athlete" onclick="showGraph(this.dataset.graph, this)">Sex by Recruited Athlete</button>
+                <button class="graph-button" id="ap-classes-by-sex-btn" data-graph="ap-classes-by-sex" onclick="showGraph(this.dataset.graph, this)">AP Classes by Sex</button>
+                <button class="graph-button" id="sat-score-by-sex-btn" data-graph="sat-score-by-sex" onclick="showGraph(this.dataset.graph, this)">SAT Score by Sex</button>
+            </div>
+            <div class="graph-display">
+                <div id="first-kiss" class="graph" style="display: flex !important;">
+                    <iframe title="First Kiss" aria-label="Pie Chart" id="datawrapper-chart-WqFCd" src="https://datawrapper.dwcdn.net/WqFCd/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sex" class="graph" style="">
+                    <iframe title="Sex" aria-label="Pie Chart" id="datawrapper-chart-xbRxx" src="https://datawrapper.dwcdn.net/xbRxx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="relationship-status" class="graph" style="">
+                    <iframe title="Significant Others" aria-label="Pie Chart" id="datawrapper-chart-4fb5r" src="https://datawrapper.dwcdn.net/4fb5r/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sexual-partners" class="graph" style="">
+                    <iframe title="Sexual Partners" aria-label="Pie Chart" id="datawrapper-chart-zBGqb" src="https://datawrapper.dwcdn.net/zBGqb/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="number-of-past-relationships" class="graph" style="">
+                    <iframe title="Significant Others" aria-label="Pie Chart" id="datawrapper-chart-AfHBt" src="https://datawrapper.dwcdn.net/AfHBt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sex-first-times" class="graph" style="">
+                    <iframe title="Sex First Times" aria-label="Pie Chart" id="datawrapper-chart-VFlEZ" src="https://datawrapper.dwcdn.net/VFlEZ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="584" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sex-frequency" class="graph" style="">
+                    <iframe title="Sex Frequency" aria-label="Pie Chart" id="datawrapper-chart-kxE2a" src="https://datawrapper.dwcdn.net/kxE2a/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="584" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sex-by-gender" class="graph" style="">
+                    <iframe title="Sex by Gender" aria-label="Grouped column chart" id="datawrapper-chart-sTx2n" src="https://datawrapper.dwcdn.net/sTx2n/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sex-by-recruited-athlete" class="graph" style="">
+                    <iframe title="Sex by Recruited Athlete" aria-label="Grouped column chart" id="datawrapper-chart-1L8kc" src="https://datawrapper.dwcdn.net/1L8kc/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="ap-classes-by-sex" class="graph" style="">
+                    <iframe title="AP Classes by Sex" aria-label="Column Chart" id="datawrapper-chart-7NhwR" src="https://datawrapper.dwcdn.net/7NhwR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sat-score-by-sex" class="graph" style="">
+                    <iframe title="SAT Score by Sex" aria-label="Column Chart" id="datawrapper-chart-KXOT4" src="https://datawrapper.dwcdn.net/KXOT4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="drugs-and-alcohol">
+        <h2>Drugs and Alcohol</h2>
+        <p>
+            More than half of the Class of 2029 have consumed alcohol in a nonreligious context, with 37 percent reporting that they drink more than twice per semester. Alcohol consumption differs sharply by financial aid status, however; more than 75 percent of students receiving no financial aid have consumed alcohol, compared to only 38 percent of students on full financial aid. Legacy students, especially multi-generational legacies, are also more likely to have consumed alcohol than their non-legacy peers. Marijuana is the second most commonly used drug, ranking higher in popularity than cigarettes or vapes. The point at which survey respondents first used drugs is distributed fairly evenly across 10th, 11th, and 12th grades.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="drugs-first-times-btn" data-graph="drugs-first-times" onclick="showGraph(this.dataset.graph, this)">Drugs First Times</button>
+                <button class="graph-button" id="drugs-frequencies-btn" data-graph="drugs-frequencies" onclick="showGraph(this.dataset.graph, this)">Drugs Frequencies</button>
+                <button class="graph-button" id="alcohol-by-financial-aid-btn" data-graph="alcohol-by-financial-aid" onclick="showGraph(this.dataset.graph, this)">Alcohol by Financial Aid</button>
+                <button class="graph-button" id="alcohol-by-legacy-btn" data-graph="alcohol-by-legacy" onclick="showGraph(this.dataset.graph, this)">Alcohol by Legacy</button>
+            </div>
+            <div class="graph-display">
+                <div id="drugs-first-times" class="graph" style="display: flex !important;">
+                    <iframe title="Drugs First Times" aria-label="Stacked Bars" id="datawrapper-chart-194U4" src="https://datawrapper.dwcdn.net/194U4/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="259" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="drugs-frequencies" class="graph" style="">
+                    <iframe title="Sex and Drugs Frequencies" aria-label="Stacked Bars" id="datawrapper-chart-xkNyt" src="https://datawrapper.dwcdn.net/xkNyt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="289" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="alcohol-by-financial-aid" class="graph" style="">
+                    <iframe title="Alcohol by Financial Aid" aria-label="Column Chart" id="datawrapper-chart-tl0NO" src="https://datawrapper.dwcdn.net/tl0NO/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="alcohol-by-legacy" class="graph" style="">
+                    <iframe title="Alcohol by Legacy" aria-label="Column Chart" id="datawrapper-chart-4mtIG" src="https://datawrapper.dwcdn.net/4mtIG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nightlife">
+        <h2>Nightlife</h2>
+        <p>
+            Frosh with legacy status are more likely to anticipate joining an eating club during their time at Princeton: 55 percent of non-legacy frosh, compared to 73 percent of legacy and 88 percent of multi-generational legacy frosh. In total, about 60 percent of the Class of 2029 anticipated they would join an eating club. Actual rates of participation, however, are likely to be far higher. In spring of 2025, 83 percent of sophomores participated in Street Week. Around 13 percent of all respondents have a fake ID, a statistic that is more pronounced for legacy (25 percent) and multi-generational legacy (31 percent) frosh.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="fake-id-btn" data-graph="fake-id" onclick="showGraph(this.dataset.graph, this)">Fake ID</button>
+                <button class="graph-button" id="fake-id-by-legacy-btn" data-graph="fake-id-by-legacy" onclick="showGraph(this.dataset.graph, this)">Fake ID by Legacy</button>
+                <button class="graph-button" id="eating-club-by-financial-aid-btn" data-graph="eating-club-by-financial-aid" onclick="showGraph(this.dataset.graph, this)">Eating Club by Financial Aid</button>
+                <button class="graph-button" id="eating-club-by-legacy-btn" data-graph="eating-club-by-legacy" onclick="showGraph(this.dataset.graph, this)">Eating Club by Legacy</button>
+            </div>
+            <div class="graph-display">
+                <div id="fake-id" class="graph" style="display: flex !important;">
+                    <iframe title="Fake ID" aria-label="Pie Chart" id="datawrapper-chart-AOsV8" src="https://datawrapper.dwcdn.net/AOsV8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="fake-id-by-legacy" class="graph" style="">
+                    <iframe title="Fake ID by Legacy" aria-label="Column Chart" id="datawrapper-chart-hE1vO" src="https://datawrapper.dwcdn.net/hE1vO/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="eating-club-by-financial-aid" class="graph" style="">
+                    <iframe title="Eating Club by Financial Aid" aria-label="Column Chart" id="datawrapper-chart-3mL8H" src="https://datawrapper.dwcdn.net/3mL8H/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="eating-club-by-legacy" class="graph" style="">
+                    <iframe title="Eating Club by Legacy" aria-label="Column Chart" id="datawrapper-chart-TBbY4" src="https://datawrapper.dwcdn.net/TBbY4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+     <div class="collapsible-nav">
+        <button id="toggle-nav" class="nav-toggle">▶</button>
+        <div class="nav-content">
+            <a href="#recreation"><button>Recreation</button></a>
+            <a href="#sex-and-romance"><button>Sex and Romance</button></a>
+            <a href="#drugs-and-alcohol"><button>Drugs and Alcohol</button></a>
+            <a href="#nightlife"><button>Nightlife</button></a>
+        </div>
+    </div>
+    <footer>
+         <p>View a complete summary of responses to the survey <a href="https://drive.google.com/file/d/1GFdTUI1XRZe0AkJs-x6r_yy4cwPP8itq/view?usp=sharing">here</a>.</p>
+    </footer>
+</body>
+</html>

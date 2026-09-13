@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frosh Survey 2029</title>
+    <meta name="description" content="Views from the Frosh Survey for the Princeton Class of 2029.">
+
+    <!-- Social media embed contents. ⚠️ FILL IN SQUARE BRACKETS. ⚠️ -->
+    <meta property="og:url" content="https://projects.dailyprincetonian.com/senior-survey-2029">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frosh Survey 2029">
+    <meta property="og:description" content="Views from the Frosh Survey for the Princeton Class of 2029.">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/pri/016a2c3c-9cd4-4906-94d8-c05bba51a32c.original.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Defines standard character set. Useful for ensuring curly quotes
+        aren't corrupted by different encodings. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Ensures mobile layout works. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to our logo for favicon. -->
+    <link rel="icon" type="image/png"
+          href="https://dirgyzwl2hnqq.cloudfront.net/ff9419fb986f760c1b0b24d4b9046051/dist/img/favicons/apple-icon-57x57.png"/>
+
+    <!-- A reference to our brand fonts. -->
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
+
+    <!-- Reference to your custom CSS. -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="navbar.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Reference to your custom scripting. -->
+    <script src="script.js" defer></script>
+	<script type="module" src="navbar.js" defer></script>
+
+    <!-- Global site tag for Google Analytics. LEAVE COMMENTED OUT UNTIL PUBLISHED
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0QFG1LJXS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-H0QFG1LJXS');
+    </script> -->
+</head>
+
+<body style="background-color: #EFE5DA;">
+	<!-- Template for the header. -->
+	<nav id="top-nav">
+        <!-- Optional hamburger menu. Remove this i tag if your project doesn't have header navigation -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <div id="left-top-nav">
+			<a href="https://dailyprincetonian.com">
+				<img id="logo" alt="The Daily Princetonian logo"
+					 src="https://dirgyzwl2hnqq.cloudfront.net/8ab5ccf6483af37484451354a9d9e4e3/dist/img/prince_logo_scrolled.png"/>
+			</a>
+			<div class="project-name"><a href="./index.html">&ensp;|&ensp;Frosh Survey 2029</a></div>
+		</div>
+        <!-- Optional header navigation. The nav-links will jump to elements with a specific id.
+            Feel free to remove the two divs below if your project doesn't need header navigation. -->
+        <div id="nav-links">
+          <a href="./demo.html">Demographics</a>
+            <a href="./life.html">Lifestyle</a>
+            <a href="./academics.html">Academics</a>
+            <a href="views.html">Views</a>
+            <a href="./about.html">About</a>
+        </div>
+	</nav>
+
+
+	<!-- Put your article's content in here -->
+    <!-- hero -->
+    <intro id ="views-intro"> 
+            <h1>Views</h1>
+            <p>
+                Entering at a tumultuous time for higher education, the Class of 2029 dishes on the Trump administration, Supreme Court justices, affirmative action, and other hot campus issues.
+            </p>
+            <div class="intro-buttons">
+            <a href="#politics"><button>Politics</button></a>
+            <a href="#social-issues"><button>Social Issues</button></a>
+            <a href="#alumni"><button>Alumni</button></a>
+            <a href="#princeton-issues"><button>Princeton Issues</button></a>
+            <a href="#perceptions-of-princeton"><button>Perceptions of Princeton</button></a>
+            </div>
+        </intro>
+
+<div class="section-container" id="views-section-container">
+    <section id="politics">
+        <h2>Politics</h2>
+        <p>
+            The Class of 2029 leans strongly left, with over two-thirds identifying as somewhat or very left-leaning. Donald Trump was the most unpopular politician, with over 75 percent viewing him strongly unfavorably, while Bernie Sanders drew the highest favorability. A majority of students said the stance of University President Christopher Eisgruber ’83 on the Trump administration did not impact their decision to attend Princeton, though nearly 40 percent did report a positive influence. Legacy admissions was a polarizing topic across the political spectrum, with the most unfavorable reactions to legacy as a factor in admission coming from very left-leaning students.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="political-persuasions-btn" data-graph="political-persuasions" onclick="showGraph(this.dataset.graph, this)">Political Persuasions</button>
+                <button class="graph-button" id="views-on-politicians-btn" data-graph="views-on-politicians" onclick="showGraph(this.dataset.graph, this)">Views on Politicians</button>
+                <button class="graph-button" id="views-on-eisgruber-btn" data-graph="views-on-eisgruber" onclick="showGraph(this.dataset.graph, this)">Views on Eisgruber</button>
+                <button class="graph-button" id="encountered-eisgruber-in-media-btn" data-graph="encountered-eisgruber-in-media" onclick="showGraph(this.dataset.graph, this)">Encountered Eisgruber in Media</button>
+                <button class="graph-button" id="anticipation-of-political-leanings-at-princeton-btn" data-graph="anticipation-of-political-leanings-at-princeton" onclick="showGraph(this.dataset.graph, this)">Anticipation of Political Leanings at Princeton</button>
+            </div>
+            <div class="graph-display">
+                <div id="political-persuasions" class="graph" style="display: flex !important;">
+                    <iframe title="Political Persuasions" aria-label="Pie Chart" id="datawrapper-chart-O11Yq" src="https://datawrapper.dwcdn.net/O11Yq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="views-on-politicians" class="graph" style="">
+                    <iframe title="Views on Politicians" aria-label="Stacked Bars" id="datawrapper-chart-ynreu" src="https://datawrapper.dwcdn.net/ynreu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="307" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="views-on-eisgruber" class="graph" style="">
+                    <iframe title="Views on Eisgruber" aria-label="Pie Chart" id="datawrapper-chart-D3hPu" src="https://datawrapper.dwcdn.net/D3hPu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="encountered-eisgruber-in-media" class="graph" style="">
+                    <iframe title="Encountered Eisgruber in Media" aria-label="Bar Chart" id="datawrapper-chart-Au99U" src="https://datawrapper.dwcdn.net/Au99U/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="anticipation-of-political-leanings-at-princeton" class="graph" style="">
+                    <iframe title="Anticipation of Political Leanings at Princeton" aria-label="Pie Chart" id="datawrapper-chart-Nbsfb" src="https://datawrapper.dwcdn.net/Nbsfb/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="social-issues">
+        <h2>Social Issues</h2>
+        <p>
+            While almost 80 percent of the incoming class views abortion services somewhat or strongly favorably, there is less consensus on issues like gender-affirming care, divestment, and marijuana legalization. Concerning the “Gaza Solidarity Encampment” and the University’s response, 43 percent and 63 percent, respectively, reported not having enough information to form an opinion. Student opinions on AI, meanwhile, generally reflected their level of use of the tools. Among the first-years who said that AI is revolutionary, almost 80 percent use AI recreationally and over half use AI for school work assistance and administrative tasks like email writing and drafting cover letters.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="timely-views-btn" data-graph="timely-views" onclick="showGraph(this.dataset.graph, this)">Timely Views</button>
+                <button class="graph-button" id="ai-models-views-btn" data-graph="ai-models-views" onclick="showGraph(this.dataset.graph, this)">AI Models Views</button>
+                <button class="graph-button" id="uses-of-ai-by-views-on-ai-models-btn" data-graph="uses-of-ai-by-views-on-ai-models" onclick="showGraph(this.dataset.graph, this)">Uses of AI by Views on AI Models</button>
+            </div>
+            <div class="graph-display">
+                <div id="timely-views" class="graph" style="display: flex !important;">
+                    <iframe title="Timely Views" aria-label="Stacked Bars" id="datawrapper-chart-wlTnK" src="https://datawrapper.dwcdn.net/wlTnK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="331" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="ai-models-views" class="graph" style="">
+                    <iframe title="AI Models Views" aria-label="Pie Chart" id="datawrapper-chart-aosqV" src="https://datawrapper.dwcdn.net/aosqV/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="uses-of-ai-by-views-on-ai-models" class="graph" style="">
+                    <iframe title="Uses of AI by Views on AI Models" aria-label="Column Chart" id="datawrapper-chart-GJnY0" src="https://datawrapper.dwcdn.net/GJnY0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="alumni">
+        <h2>Alumni</h2>
+        <p>
+            Among Princeton’s famous alumni, the Class of 2029 most favorably viewed Michelle Obama ’85, with over 80 percent of frosh reporting their view of Obama as either somewhat favorable or strongly favorable. Views on Pete Hegseth ’03 were almost evenly split between a lack of information and strongly to somewhat unfavorable views. Of the almost 57 percent of people who had enough information on Hegseth to form an opinion, 43 percent had either strongly or somewhat negative views on him. Almost 60 percent of students reported not having enough information about Associate Justices of the Supreme Court Elena Kagan ’81 and Samuel Alito ’72, while just 31 percent reported not having enough information about Associate Justice Sonia Sotomayor ’76.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="views-on-high-profile-alumni-btn" data-graph="views-on-high-profile-alumni" onclick="showGraph(this.dataset.graph, this)">Views on High-Profile Alumni</button>
+            </div>
+            <div class="graph-display">
+                <div id="views-on-high-profile-alumni" class="graph" style="display: flex !important;">
+                    <iframe title="Views on High-Profile Alumni" aria-label="Stacked Bars" id="datawrapper-chart-bqblF" src="https://datawrapper.dwcdn.net/bqblF/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="342" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="princeton-issues">
+        <h2>Princeton Issues</h2>
+        <p>
+            Racial diversity in the Class of 2029 seems consistent with previous years based on survey responses. However, according to Princeton’s Class of 2029 data, only 5 percent identify as Black or African American, the lowest since 1968. Among the freshman class, 24.44 percent of respondents viewed using race in admissions as somewhat unfavorable, and 21.48 percent viewed it as strongly unfavorable. With regards to legacy admissions, 64.29 percent viewed legacy admissions strongly or somewhat unfavorably; 13.8 percent of the Class of 2029 are legacy students, and 6.2 percent hold multi-generational legacy status. 46.47 percent of the class saw the expansion of Princeton’s undergraduate class as somewhat or strongly favorable. When thinking of their time after Princeton, 71.9 percent of the Class of 2029 described their career aspirations as being in the nation’s service or in the service of humanity, closely followed by the 70.1 percent who aspire to make money.  
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="views-on-campus-and-admissions-btn" data-graph="views-on-campus-and-admissions" onclick="showGraph(this.dataset.graph, this)">Views on Campus and Admissions</button>
+                <button class="graph-button" id="perceptions-about-princeton-btn" data-graph="perceptions-about-princeton" onclick="showGraph(this.dataset.graph, this)">Perceptions About Princeton</button>
+                <button class="graph-button" id="legacy-admissions-by-political-views-btn" data-graph="legacy-admissions-by-political-views" onclick="showGraph(this.dataset.graph, this)">Legacy Admissions by Political Views</button>
+                <button class="graph-button" id="affirmative-action-by-race-btn" data-graph="affirmative-action-by-race" onclick="showGraph(this.dataset.graph, this)">Affirmative Action by Race</button>
+            </div>
+            <div class="graph-display">
+                <div id="views-on-campus-and-admissions" class="graph" style="display: flex !important;">
+                    <iframe title="Campus and Admissions Views" aria-label="Stacked Bars" id="datawrapper-chart-VqPVx" src="https://datawrapper.dwcdn.net/VqPVx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="252" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="perceptions-about-princeton" class="graph" style="">
+                    <iframe title="Perceptions About Princeton" aria-label="Stacked Bars" id="datawrapper-chart-pcFMV" src="https://datawrapper.dwcdn.net/pcFMV/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="355" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="legacy-admissions-by-political-views" class="graph" style="">
+                    <iframe title="Legacy Admissions by Political Views" aria-label="Column Chart" id="datawrapper-chart-d0kPB" src="https://datawrapper.dwcdn.net/d0kPB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="affirmative-action-by-race" class="graph" style="">
+                    <iframe title="Affirmative Action by Race" aria-label="Column Chart" id="datawrapper-chart-OfMmq" src="https://datawrapper.dwcdn.net/OfMmq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="perceptions-of-princeton">
+        <h2>Perceptions of Princeton</h2>
+        <p>
+            The Class of 2029 generally believes Princeton students genuinely seek to serve humanity, with only one percent of the class finding this statement “very untrue.” Twenty-two percent believe strongly that Princeton is not a place where students are always partying, compared to the 31 percent who feel students are always studying.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="princeton-culture-of-serving-humanity-by-intention-to-serve-humanity-btn" data-graph="princeton-culture-of-serving-humanity-by-intention-to-serve-humanity" onclick="showGraph(this.dataset.graph, this)">Princeton Culture of Serving Humanity by Intention to Serve Humanity</button>
+            </div>
+            <div class="graph-display">
+                <div id="princeton-culture-of-serving-humanity-by-intention-to-serve-humanity" class="graph" style="display: flex !important;">
+                    <iframe title="Princeton Culture of Serving Humanity by Intention to Serve Humanity" aria-label="Column Chart" id="datawrapper-chart-jyr6g" src="https://datawrapper.dwcdn.net/jyr6g/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+	<div class="collapsible-nav">
+        <button id="toggle-nav" class="nav-toggle">▶</button>
+        <div class="nav-content">
+            <a href="#politics"><button>Politics</button></a>
+            <a href="#social-issues"><button>Social Issues</button></a>
+            <a href="#alumni"><button>Alumni</button></a>
+            <a href="#princeton-issues"><button>Princeton Issues</button></a>
+            <a href="#perceptions-of-princeton"><button>Perceptions of Princeton</button></a>
+        </div>
+    </div>
+    <footer>
+         <p>View a complete summary of responses to the survey <a href="https://drive.google.com/file/d/1GFdTUI1XRZe0AkJs-x6r_yy4cwPP8itq/view?usp=sharing">here</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frosh Survey 2029</title>
+    <meta name="description" content="Academics section of the Frosh Survey for the Princeton Class of 2029.">
+
+    <!-- Social media embed contents. ⚠️ FILL IN SQUARE BRACKETS. ⚠️ -->
+    <meta property="og:url" content="https://s3.amazonaws.com/snwceomedia/pri/016a2c3c-9cd4-4906-94d8-c05bba51a32c.original.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frosh Survey 2029">
+    <meta property="og:description" content="Academics section of the Frosh Survey for the Princeton Class of 2029.">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Defines standard character set. Useful for ensuring curly quotes
+        aren't corrupted by different encodings. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Ensures mobile layout works. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to our logo for favicon. -->
+    <link rel="icon" type="image/png"
+          href="https://dirgyzwl2hnqq.cloudfront.net/ff9419fb986f760c1b0b24d4b9046051/dist/img/favicons/apple-icon-57x57.png"/>
+
+    <!-- A reference to our brand fonts. -->
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/static.getsnworks.com/fontawesome/5.15.2/css/all.min.css">
+
+    <!-- Reference to your custom CSS. -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="navbar.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Reference to your custom scripting. -->
+    <script src="script.js" defer></script>
+	<script type="module" src="navbar.js" defer></script>
+
+    <!-- Global site tag for Google Analytics. LEAVE COMMENTED OUT UNTIL PUBLISHED -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0QFG1LJXS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-H0QFG1LJXS');
+    </script> 
+</head>
+
+<body style="background-color: #EFE5DA;">
+	<!-- Template for the header. -->
+	<nav id="top-nav">
+        <!-- Optional hamburger menu. Remove this i tag if your project doesn't have header navigation -->
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <div id="left-top-nav">
+			<a href="https://dailyprincetonian.com">
+				<img id="logo" alt="The Daily Princetonian logo"
+					 src="https://dirgyzwl2hnqq.cloudfront.net/8ab5ccf6483af37484451354a9d9e4e3/dist/img/prince_logo_scrolled.png"/>
+			</a>
+			<div class="project-name"><a href="./index.html">&ensp;|&ensp;Frosh Survey 2029</a></div>
+		</div>
+        <!-- Optional header navigation. The nav-links will jump to elements with a specific id.
+            Feel free to remove the two divs below if your project doesn't need header navigation. -->
+        <div id="nav-links">
+            <a href="./demo.html">Demographics</a>
+            <a href="./life.html">Lifestyle</a>
+            <a href="./academics.html">Academics</a>
+            <a href="views.html">Views</a>
+            <a href="./about.html">About</a>
+        </div>
+	</nav>
+
+
+	<!-- Put your article's content in here -->
+    <!-- hero -->
+    <intro id ="academics-intro"> 
+            <h1>Academics</h1>
+            <p>
+                Members of the Class of 2029 have actively contributed to their communities through service, worked diligently both in school and during summer jobs, and crushed standardized tests and their pre-college studies. Upon entering Princeton, they intend to explore a diverse range of subjects within the humanities and engineering, with a particular focus on potential earnings. Read more to learn about the academic skills and diversity of backgrounds that the Class of 2029 brings to campus.
+            </p>
+            <div class="intro-buttons">
+            <a href="#admissions"><button>Admissions</button></a>
+            <a href="#honor-code"><button>Honor Code</button></a>
+            <a href="#high-school-extracurriculars"><button>High School Extracurriculars</button></a>
+            <a href="#intended-studies"><button>Intended Studies</button></a>
+            <a href="#pre-college-studies"><button>Pre College Studies</button></a>
+            <a href="#testing"><button>Testing</button></a>
+            </div>
+        </intro>
+
+<div class="section-container" id="academics-section-container">
+    <section id="admissions">
+        <h2>Admissions</h2>
+        <p>
+            Princeton was the first choice for 69 percent of students, but out of respondents who did not have Princeton as their top choice, approximately 70 percent preferred either MIT, Stanford, Harvard, or Yale. Around 80 percent of Princeton admits who declined their acceptances chose to attend one of those four schools, according to a September memo circulated to faculty. Around 18 percent of respondents reported using the free version of ChatGPT on their college essays, while about one-third said they used Grammarly.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="other-institution-admittance-btn" data-graph="other-institution-admittance" onclick="showGraph(this.dataset.graph, this)">Other Institution Admittance</button>
+                <button class="graph-button" id="princetons-choice-ranking-btn" data-graph="princetons-choice-ranking" onclick="showGraph(this.dataset.graph, this)">Princeton&rsquo;s Choice Ranking</button>
+                <button class="graph-button" id="top-choice-school-btn" data-graph="top-choice-school" onclick="showGraph(this.dataset.graph, this)">Top Choice School</button>
+                <button class="graph-button" id="submitted-standardized-test-scores-btn" data-graph="submitted-standardized-test-scores" onclick="showGraph(this.dataset.graph, this)">Submitted Standardized Test Scores?</button>
+                <button class="graph-button" id="online-tools-used-for-college-essays-btn" data-graph="online-tools-used-for-college-essays" onclick="showGraph(this.dataset.graph, this)">Online Tools Used for College Essays</button>
+                <button class="graph-button" id="household-income-by-private-college-counseling-btn" data-graph="household-income-by-private-college-counseling" onclick="showGraph(this.dataset.graph, this)">Household Income by Private College Counseling</button>
+                <button class="graph-button" id="princeton-top-choice-by-area-of-study-btn" data-graph="princeton-top-choice-by-area-of-study" onclick="showGraph(this.dataset.graph, this)">Princeton Top Choice by Area of Study</button>
+                <button class="graph-button" id="test-prep-by-school-type-btn" data-graph="test-prep-by-school-type" onclick="showGraph(this.dataset.graph, this)">Test Prep by School Type</button>
+                <button class="graph-button" id="test-prep-by-income-btn" data-graph="test-prep-by-income" onclick="showGraph(this.dataset.graph, this)">Test Prep by Income</button>
+            </div>
+            <div class="graph-display">
+                <div id="other-institution-admittance" class="graph" style="display: flex !important;">
+                    <iframe title="Other Institution Admittance" aria-label="Bar Chart" id="datawrapper-chart-7kwTa" src="https://datawrapper.dwcdn.net/7kwTa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="princetons-choice-ranking" class="graph" style="">
+                    <iframe title="Princeton's Choice Ranking" aria-label="Pie Chart" id="datawrapper-chart-WNN3K" src="https://datawrapper.dwcdn.net/WNN3K/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="top-choice-school" class="graph" style="">
+                    <iframe title="Top Choice School" aria-label="Pie Chart" id="datawrapper-chart-0Xi5A" src="https://datawrapper.dwcdn.net/0Xi5A/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="submitted-standardized-test-scores" class="graph" style="">
+                    <iframe title="Submitted Standardized Test Scores?" aria-label="Pie Chart" id="datawrapper-chart-i4IOa" src="https://datawrapper.dwcdn.net/i4IOa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="online-tools-used-for-college-essays" class="graph" style="">
+                    <iframe title="Online Tools Used for College Essays" aria-label="Bar Chart" id="datawrapper-chart-ah3yL" src="https://datawrapper.dwcdn.net/ah3yL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="household-income-by-private-college-counseling" class="graph" style="">
+                    <iframe title="Household Income by Private College Counseling" aria-label="Column Chart" id="datawrapper-chart-i2cKX" src="https://datawrapper.dwcdn.net/i2cKX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="princeton-top-choice-by-area-of-study" class="graph" style="">
+                    <iframe title="Princeton Top Choice by Area of Study" aria-label="Column Chart" id="datawrapper-chart-JoR8c" src="https://datawrapper.dwcdn.net/JoR8c/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="test-prep-by-school-type" class="graph" style="">
+                    <iframe title="Test Prep by School Type" aria-label="Column Chart" id="datawrapper-chart-fHwyJ" src="https://datawrapper.dwcdn.net/fHwyJ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="test-prep-by-income" class="graph" style="">
+                    <iframe title="Test Prep by Income" aria-label="Column Chart" id="datawrapper-chart-1UqLY" src="https://datawrapper.dwcdn.net/1UqLY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="honor-code">
+        <h2>Honor Code</h2>
+        <p>
+            Twenty percent of the Class of 2029 reported having cheated on examinations or assignments during high school. This statistic is similar to that of the Class of 2028, where 19.5 percent reported violating the honor code in high school.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="cheating-in-high-school-btn" data-graph="cheating-in-high-school" onclick="showGraph(this.dataset.graph, this)">Cheating in High School</button>
+            </div>
+            <div class="graph-display">
+                <div id="cheating-in-high-school" class="graph" style="display: flex !important;">
+                    <iframe title="Cheating in High School" aria-label="Pie Chart" id="datawrapper-chart-Wfa28" src="https://datawrapper.dwcdn.net/Wfa28/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="high-school-extracurriculars">
+        <h2>High School Extracurriculars</h2>
+        <p>
+            Nearly three-quarters of the incoming class reported doing community service in high school. A large share of students also worked jobs, with 58 percent working in the summer and over a third working during the school year. More than half of students participated in honor societies, and 49 percent participated in varsity athletics. A small group — 2.5 percent of frosh — devoted at least 40 hours each week to extracurriculars. 
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="extracurriculars-btn" data-graph="extracurriculars" onclick="showGraph(this.dataset.graph, this)">Extracurriculars</button>
+                <button class="graph-button" id="employment-during-high-school-btn" data-graph="employment-during-high-school" onclick="showGraph(this.dataset.graph, this)">Employment During High School</button>
+                <button class="graph-button" id="income-this-summer-btn" data-graph="income-this-summer" onclick="showGraph(this.dataset.graph, this)">Income This Summer</button>
+                <button class="graph-button" id="hours-in-extracurriculars-btn" data-graph="hours-in-extracurriculars" onclick="showGraph(this.dataset.graph, this)">Hours in Extracurriculars</button>
+                <button class="graph-button" id="hours-in-unpaid-extracurriculars-by-secondary-school-btn" data-graph="hours-in-unpaid-extracurriculars-by-secondary-school" onclick="showGraph(this.dataset.graph, this)">Hours in Unpaid Extracurriculars by Secondary School</button>
+            </div>
+            <div class="graph-display">
+                <div id="extracurriculars" class="graph" style="display: flex !important;">
+                    <iframe title="Extracurriculars" aria-label="Bar Chart" id="datawrapper-chart-103Kr" src="https://datawrapper.dwcdn.net/103Kr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="employment-during-high-school" class="graph" style="">
+                    <iframe title="Employment During High School" aria-label="Bar Chart" id="datawrapper-chart-B0ePm" src="https://datawrapper.dwcdn.net/B0ePm/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="231" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="income-this-summer" class="graph" style="">
+                    <iframe title="Income This Summer" aria-label="Bar Chart" id="datawrapper-chart-h3xS4" src="https://datawrapper.dwcdn.net/h3xS4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="hours-in-extracurriculars" class="graph" style="">
+                    <iframe title="Hours in Extracurriculars" aria-label="Column Chart" id="datawrapper-chart-dui2F" src="https://datawrapper.dwcdn.net/dui2F/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="hours-in-unpaid-extracurriculars-by-secondary-school" class="graph" style="">
+                    <iframe title="Hours in Unpaid Extracurriculars by Secondary School" aria-label="Column Chart" id="datawrapper-chart-5PJle" src="https://datawrapper.dwcdn.net/5PJle/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="intended-studies">
+        <h2>Intended Studies</h2>
+        <p>
+            Like last year, around 60 percent of the Class of 2029 intends to pursue a Bachelor of Arts (A.B.) degree — ten percentage points fewer than those who applied with the A.B. option. Meanwhile, 32 percent of the Class of 2029 intends to study engineering , the same percentage as that of the Class of 2028 who declared engineering majors last spring. Out of all intended career fields, future engineers were most likely to be in it for the money: nearly 45 percent of aspiring engineers indicated that one of their career aspirations was to make money.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="post-grad-field-interests-btn" data-graph="post-grad-field-interests" onclick="showGraph(this.dataset.graph, this)">Post-Grad Field Interests</button>
+                <button class="graph-button" id="applied-degree-option-btn" data-graph="applied-degree-option" onclick="showGraph(this.dataset.graph, this)">Applied Degree Option</button>
+                <button class="graph-button" id="intended-degree-option-btn" data-graph="intended-degree-option" onclick="showGraph(this.dataset.graph, this)">Intended Degree Option</button>
+                <button class="graph-button" id="anticipated-notetaking-method-btn" data-graph="anticipated-notetaking-method" onclick="showGraph(this.dataset.graph, this)">Anticipated Notetaking Method</button>
+                <button class="graph-button" id="anticipated-computer-type-btn" data-graph="anticipated-computer-type" onclick="showGraph(this.dataset.graph, this)">Anticipated Computer Type</button>
+                <button class="graph-button" id="purchased-laptop-tablet-btn" data-graph="purchased-laptop-tablet" onclick="showGraph(this.dataset.graph, this)">Purchased Laptop/Tablet</button>
+                <button class="graph-button" id="career-aspirations-btn" data-graph="career-aspirations" onclick="showGraph(this.dataset.graph, this)">Career Aspirations</button>
+                <button class="graph-button" id="career-fields-by-career-aspirations-btn" data-graph="career-fields-by-career-aspirations" onclick="showGraph(this.dataset.graph, this)">Career Fields by Career Aspirations</button>
+                <button class="graph-button" id="hours-studying-by-area-of-study-btn" data-graph="hours-studying-by-area-of-study" onclick="showGraph(this.dataset.graph, this)">Hours Studying by Area of Study</button>
+                <button class="graph-button" id="sat-score-by-area-of-study-btn" data-graph="sat-score-by-area-of-study" onclick="showGraph(this.dataset.graph, this)">SAT Score by Area of Study</button>
+            </div>
+            <div class="graph-display">
+                <div id="post-grad-field-interests" class="graph" style="display: flex !important;">
+                    <iframe title="Post-Grad Field Interests" aria-label="Bar Chart" id="datawrapper-chart-JG2SY" src="https://datawrapper.dwcdn.net/JG2SY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="applied-degree-option" class="graph" style="">
+                    <iframe title="Applied Degree Option" aria-label="Pie Chart" id="datawrapper-chart-Ooghs" src="https://datawrapper.dwcdn.net/Ooghs/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="intended-degree-option" class="graph" style="">
+                    <iframe title="Intended Degree Option" aria-label="Pie Chart" id="datawrapper-chart-kFbpr" src="https://datawrapper.dwcdn.net/kFbpr/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="anticipated-notetaking-method" class="graph" style="">
+                    <iframe title="Anticipated Notetaking Method" aria-label="Bar Chart" id="datawrapper-chart-pDnAx" src="https://datawrapper.dwcdn.net/pDnAx/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="anticipated-computer-type" class="graph" style="">
+                    <iframe title="Anticipated Computer Type" aria-label="Pie Chart" id="datawrapper-chart-KXhnt" src="https://datawrapper.dwcdn.net/KXhnt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="purchased-laptop-tablet" class="graph" style="">
+                    <iframe title="Purchased Laptop/Tablet" aria-label="Pie Chart" id="datawrapper-chart-TXqY9" src="https://datawrapper.dwcdn.net/TXqY9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="career-aspirations" class="graph" style="">
+                    <iframe title="Career Aspirations" aria-label="Bar Chart" id="datawrapper-chart-XhLab" src="https://datawrapper.dwcdn.net/XhLab/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="career-fields-by-career-aspirations" class="graph" style="">
+                    <iframe title="Career Fields by Career Aspirations" aria-label="Column Chart" id="datawrapper-chart-mTeYq" src="https://datawrapper.dwcdn.net/mTeYq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="hours-studying-by-area-of-study" class="graph" style="">
+                    <iframe title="Hours Studying by Area of Study" aria-label="Column Chart" id="datawrapper-chart-gdsws" src="https://datawrapper.dwcdn.net/gdsws/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sat-score-by-area-of-study" class="graph" style="">
+                    <iframe title="SAT Score by Area of Study" aria-label="Column Chart" id="datawrapper-chart-C9nGP" src="https://datawrapper.dwcdn.net/C9nGP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pre-college-studies">
+        <h2>Pre-College Studies</h2>
+        <p>
+            About half of students admitted via regular decision attended a non-selective public high school, compared to only 43.4 percent admitted during early action. More than 80 percent of Questbridge admits attended a public school. Almost all high schools offered Advanced Placement (AP) courses, but IB offerings were comparatively low, representing just 17.1 percent of selective public schools and 15 percent of independent private schools. 
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="which-ap-exams-btn" data-graph="which-ap-exams" onclick="showGraph(this.dataset.graph, this)">Which AP Exams</button>
+                <button class="graph-button" id="highest-mathematics-level-in-high-school-btn" data-graph="highest-mathematics-level-in-high-school" onclick="showGraph(this.dataset.graph, this)">Highest Mathematics Level in High School</button>
+                <button class="graph-button" id="unweighted-high-school-gpa-btn" data-graph="unweighted-high-school-gpa" onclick="showGraph(this.dataset.graph, this)">Unweighted High School GPA</button>
+                <button class="graph-button" id="graduated-with-honors-btn" data-graph="graduated-with-honors" onclick="showGraph(this.dataset.graph, this)">Graduated with Honors?</button>
+                <button class="graph-button" id="ai-model-use-btn" data-graph="ai-model-use" onclick="showGraph(this.dataset.graph, this)">AI Model Use</button>
+                <button class="graph-button" id="hours-studying-per-week-btn" data-graph="hours-studying-per-week" onclick="showGraph(this.dataset.graph, this)">Hours Studying Per Week</button>
+                <button class="graph-button" id="sat-score-by-phone-use-btn" data-graph="sat-score-by-phone-use" onclick="showGraph(this.dataset.graph, this)">SAT Score by Phone Use</button>
+                <button class="graph-button" id="private-college-counseling-by-secondary-school-btn" data-graph="private-college-counseling-by-secondary-school" onclick="showGraph(this.dataset.graph, this)">Private College Counseling by Secondary School</button>
+                <button class="graph-button" id="secondary-school-by-admission-type-btn" data-graph="secondary-school-by-admission-type" onclick="showGraph(this.dataset.graph, this)">Secondary School by Admission Type</button>
+                <button class="graph-button" id="high-school-college-counselors-by-secondary-school-btn" data-graph="high-school-college-counselors-by-secondary-school" onclick="showGraph(this.dataset.graph, this)">High School College Counselors by Secondary School</button>
+                <button class="graph-button" id="private-college-assistance-by-race-btn" data-graph="private-college-assistance-by-race" onclick="showGraph(this.dataset.graph, this)">Private College Assistance by Race</button>
+                <button class="graph-button" id="hours-studying-by-secondary-school-btn" data-graph="hours-studying-by-secondary-school" onclick="showGraph(this.dataset.graph, this)">Hours Studying by Secondary School</button>
+                <button class="graph-button" id="advanced-classes-offered-by-school-type-btn" data-graph="advanced-classes-offered-by-school-type" onclick="showGraph(this.dataset.graph, this)">Advanced Classes Offered by School Type</button>
+                <button class="graph-button" id="ap-classes-taken-by-gpa-btn" data-graph="ap-classes-taken-by-gpa" onclick="showGraph(this.dataset.graph, this)">AP Classes Taken by GPA</button>
+            </div>
+            <div class="graph-display">
+                <div id="which-ap-exams" class="graph" style="display: flex !important;">
+                    <iframe title="Which AP Exams" aria-label="Bar Chart" id="datawrapper-chart-OOOuL" src="https://datawrapper.dwcdn.net/OOOuL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="highest-mathematics-level-in-high-school" class="graph" style="">
+                    <iframe title="Highest Mathematics Level in High School" aria-label="Bar Chart" id="datawrapper-chart-ysLS3" src="https://datawrapper.dwcdn.net/ysLS3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="unweighted-high-school-gpa" class="graph" style="">
+                    <iframe title="Unweighted High School GPA" aria-label="Bar Chart" id="datawrapper-chart-vHIEO" src="https://datawrapper.dwcdn.net/vHIEO/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="graduated-with-honors" class="graph" style="">
+                    <iframe title="Graduated with Honors?" aria-label="Bar Chart" id="datawrapper-chart-lVdcJ" src="https://datawrapper.dwcdn.net/lVdcJ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="ai-model-use" class="graph" style="">
+                    <iframe title="AI Model Use" aria-label="Bar Chart" id="datawrapper-chart-RjSo5" src="https://datawrapper.dwcdn.net/RjSo5/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="hours-studying-per-week" class="graph" style="">
+                    <iframe title="Hours Studying Per Week" aria-label="Column Chart" id="datawrapper-chart-dZELk" src="https://datawrapper.dwcdn.net/dZELk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sat-score-by-phone-use" class="graph" style="">
+                    <iframe title="SAT Score by Phone Use" aria-label="Column Chart" id="datawrapper-chart-OhYvW" src="https://datawrapper.dwcdn.net/OhYvW/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="private-college-counseling-by-secondary-school" class="graph" style="">
+                    <iframe title="Private College Counseling by Secondary School" aria-label="Grouped column chart" id="datawrapper-chart-I6eVp" src="https://datawrapper.dwcdn.net/I6eVp/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="secondary-school-by-admission-type" class="graph" style="">
+                    <iframe title="Secondary School by Admission Type" aria-label="Column Chart" id="datawrapper-chart-zHgkO" src="https://datawrapper.dwcdn.net/zHgkO/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="high-school-college-counselors-by-secondary-school" class="graph" style="">
+                    <iframe title="High School College Counselors by Secondary School" aria-label="Grouped column chart" id="datawrapper-chart-zSvlW" src="https://datawrapper.dwcdn.net/zSvlW/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="private-college-assistance-by-race" class="graph" style="">
+                    <iframe title="Private College Assistance by Race" aria-label="Grouped column chart" id="datawrapper-chart-JoiTW" src="https://datawrapper.dwcdn.net/JoiTW/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="hours-studying-by-secondary-school" class="graph" style="">
+                    <iframe title="Hours Studying by Secondary School" aria-label="Column Chart" id="datawrapper-chart-B3VMD" src="https://datawrapper.dwcdn.net/B3VMD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="advanced-classes-offered-by-school-type" class="graph" style="">
+                    <iframe title="Advanced Classes Offered by School Type" aria-label="Column Chart" id="datawrapper-chart-OXnnP" src="https://datawrapper.dwcdn.net/OXnnP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="ap-classes-taken-by-gpa" class="graph" style="">
+                    <iframe title="AP Classes Taken by GPA" aria-label="Column Chart" id="datawrapper-chart-3ijmf" src="https://datawrapper.dwcdn.net/3ijmf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testing">
+        <h2>Testing</h2>
+        <p>
+            Of the Class of 2029 members who took the ACT, about three-quarters achieved a 34 (the 99th percentile) or better. However, only 47 percent of those who took the SAT scored above a 1530, placing in the 99th percentile. Only three percent of non-athletes who took the SAT had a best score lower than a 1390 — the 93rd percentile — compared to 20 percent of recruited athletes. Princeton remains test-optional through the current 2025–2026 admissions cycle.
+        </p>
+        <div class="graph-button-container">
+            <div class="button-container">
+                <button class="graph-button active" id="number-of-ap-exams-taken-btn" data-graph="number-of-ap-exams-taken" onclick="showGraph(this.dataset.graph, this)">Number of AP Exams Taken</button>
+                <button class="graph-button" id="best-act-btn" data-graph="best-act" onclick="showGraph(this.dataset.graph, this)">Best ACT</button>
+                <button class="graph-button" id="best-sat-btn" data-graph="best-sat" onclick="showGraph(this.dataset.graph, this)">Best SAT</button>
+                <button class="graph-button" id="sat-by-legacy-btn" data-graph="sat-by-legacy" onclick="showGraph(this.dataset.graph, this)">SAT by Legacy</button>
+                <button class="graph-button" id="sat-by-recruited-athlete-btn" data-graph="sat-by-recruited-athlete" onclick="showGraph(this.dataset.graph, this)">SAT by Recruited Athlete</button>
+                <button class="graph-button" id="act-by-legacy-btn" data-graph="act-by-legacy" onclick="showGraph(this.dataset.graph, this)">ACT by Legacy</button>
+                <button class="graph-button" id="act-by-recruited-athlete-btn" data-graph="act-by-recruited-athlete" onclick="showGraph(this.dataset.graph, this)">ACT by Recruited Athlete</button>
+                <button class="graph-button" id="test-score-submission-by-recruited-athlete-btn" data-graph="test-score-submission-by-recruited-athlete" onclick="showGraph(this.dataset.graph, this)">Test Score Submission by Recruited Athlete</button>
+            </div>
+            <div class="graph-display">
+                <div id="number-of-ap-exams-taken" class="graph" style="display: flex !important;">
+                    <iframe title="Number of AP Exams Taken" aria-label="Column Chart" id="datawrapper-chart-kXuco" src="https://datawrapper.dwcdn.net/kXuco/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="best-act" class="graph" style="">
+                    <iframe title="Best ACT" aria-label="Column Chart" id="datawrapper-chart-8kzKP" src="https://datawrapper.dwcdn.net/8kzKP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="best-sat" class="graph" style="">
+                    <iframe title="Best SAT" aria-label="Column Chart" id="datawrapper-chart-6ctMi" src="https://datawrapper.dwcdn.net/6ctMi/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="473" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sat-by-legacy" class="graph" style="">
+                    <iframe title="SAT by Legacy" aria-label="Column Chart" id="datawrapper-chart-A0Lk3" src="https://datawrapper.dwcdn.net/A0Lk3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="sat-by-recruited-athlete" class="graph" style="">
+                    <iframe title="SAT by Recruited Athlete" aria-label="Column Chart" id="datawrapper-chart-OJbxK" src="https://datawrapper.dwcdn.net/OJbxK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="act-by-legacy" class="graph" style="">
+                    <iframe title="ACT by Legacy" aria-label="Column Chart" id="datawrapper-chart-xsdI4" src="https://datawrapper.dwcdn.net/xsdI4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="act-by-recruited-athlete" class="graph" style="">
+                    <iframe title="ACT by Recruited Athlete" aria-label="Column Chart" id="datawrapper-chart-pnw93" src="https://datawrapper.dwcdn.net/pnw93/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+                <div id="test-score-submission-by-recruited-athlete" class="graph" style="">
+                    <iframe title="Test Score Submission by Recruited Athlete" aria-label="Grouped column chart" id="datawrapper-chart-g0EWh" src="https://datawrapper.dwcdn.net/g0EWh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();</script>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+	<div class="collapsible-nav">
+        <button id="toggle-nav" class="nav-toggle">▶</button>
+        <div class="nav-content">
+            <a href="#admissions"><button>Admissions</button></a>
+            <a href="#honor-code"><button>Honor Code</button></a>
+            <a href="#high-school-extracurriculars"><button>High School Extracurriculars</button></a>
+            <a href="#intended-studies"><button>Intended Studies</button></a>
+            <a href="#pre-college-studies"><button>Pre College Studies</button></a>
+            <a href="#testing"><button>Testing</button></a>
+        </div>
+    </div>
+    <footer>
+         <p>View a complete summary of responses to the survey <a href="https://drive.google.com/file/d/1GFdTUI1XRZe0AkJs-x6r_yy4cwPP8itq/view?usp=sharing">here</a>.</p>
+    </footer>
+</body>
+</html>

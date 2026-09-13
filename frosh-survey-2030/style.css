@@ -1,0 +1,562 @@
+:root {
+    --yellow:#eeaf61;
+    --orange: #E77500;
+    --red: #ee5d6c;
+    --pink:#ce4993;
+    --purple:#6a0d83;
+    --tan: #f2b46f;
+}
+#Academics {
+    background: url(https://s3.amazonaws.com/snwceomedia/pri/d4867740-8fd3-4e62-a9e9-77a5aad61ac5.original.jpg);
+    display: flex;
+    width: 30.67vw;
+    height: 57.33vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 34.6vw;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 15px; /* Rounds the corners */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+#Demographics {
+    background: url(https://s3.amazonaws.com/snwceomedia/pri/bcb1bdc8-f68f-423d-ac34-4c8ffda0a335.original.jpeg);
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    width: 30.67vw;
+    height: 96vh;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 15px; /* Rounds the corners */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+#About {
+    background: url(https://s3.amazonaws.com/snwceomedia/pri/86a11f9c-8861-42eb-8d9e-0ca2e79e2302.original.jpg);
+    display: flex;
+    position: absolute;
+    background-position: center;
+    bottom: 2vh;
+    right: 2vw;
+    width: 30.67vw;
+    height: 30.67vh;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out; 
+    border-radius: 15px; /* Rounds the corners */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Views {
+    background: url(https://snworksceo.imgix.net/pri/dd20a5c3-2dde-4fa1-84b3-3c20efd9a002.sized-1000x1000.jpg?w=2000&dpr=2);
+    position: absolute;
+    display: flex;
+    top: 2vh;
+    right: 2vw;
+    width: 30.67vw;
+    height: 61.33vh;
+    background-size: cover;
+transition: transform 0.3s ease-in-out; 
+border-radius: 15px; /* Rounds the corners */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+
+#College-Life {
+  background: url(https://s3.amazonaws.com/snwceomedia/pri/c52b29ec-ab21-4d7f-a779-b7ee15076f2c.original.jpg);
+  position: absolute;
+  display: flex;
+  top: 2vh;
+  left: 34.6vw;
+  width: 30.67vw;
+  height: 34.67vh;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out; 
+  border-radius: 15px; /* Rounds the corners */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.card-container:hover .card {
+  opacity: 0.6;
+}
+
+/* only hovered card is full opacity */
+.card-container .card:hover {
+  opacity: 1;
+  z-index: 1;
+}
+
+#Academics:hover {
+  transform: scale(1.06);
+}
+#Demographics:hover {
+  transform: scale(1.06);
+}
+#About:hover {
+  transform: scale(1.06);
+}
+#Views:hover {
+  transform: scale(1.06);
+}
+#After-Princeton:hover {
+  transform: scale(1.06);
+}
+#College-Life:hover {
+  transform: scale(1.06);
+}
+#Academics h1, #Demographics h1, #About h1, #Views h1, #After-Princeton h1, #College-Life h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
+
+}
+@media screen and (max-width: 920px) {
+  #College-Life, #Academics, #Views, #Demographics, #After-Princeton, #About {
+      position: absolute;
+      width: 94%;
+      height: 30vh;
+      left: 3%;
+      right: 3%;
+  }
+}
+@media screen and (max-width: 920px) {
+  #welcome-text{
+    position: absolute;
+    top: 194vh;
+  }
+  
+}
+@media screen and (max-width: 920px) {
+  #College-Life {
+      top: 2vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  #Academics {
+      top: 34vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  #Views {
+      top: 66vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  #Demographics {
+      top: 98vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  #After-Princeton {
+      top: 130vh;
+  }
+}
+@media screen and (max-width: 920px) {
+  #About {
+      top: 162vh;
+  }
+}
+footer {
+
+  background-color: #EFE5DA;
+  color: black;
+  text-align: center;
+  padding: 0rem;
+  font-size: large;
+  z-index: 50;
+  margin-top: 0;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: franklin-gothic-urw, sans-serif, serif !important;
+  scroll-behavior: smooth;
+}
+
+section > h2 {
+  font-size: 2rem;
+}
+section > p {
+  font-size: 1.5rem;
+}
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row; 
+  gap: .4rem; 
+  flex-wrap: wrap;
+}
+intro {
+    width: 100%;
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+   display:flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    
+}
+* {
+  box-sizing: border-box;
+}
+#demo-intro {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/snwceomedia/pri/bcb1bdc8-f68f-423d-ac34-4c8ffda0a335.original.jpeg');
+}
+#life-intro {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/snwceomedia/pri/c52b29ec-ab21-4d7f-a779-b7ee15076f2c.original.jpg');
+}
+#after-intro {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/snwceomedia/pri/48690fce-b7a7-487d-b38f-ca2f8c01204f.original.jpg');
+}
+#academics-intro {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://s3.amazonaws.com/snwceomedia/pri/d4867740-8fd3-4e62-a9e9-77a5aad61ac5.original.jpg');
+}
+#views-intro {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://www.international.hu-berlin.de/media/pages/kooperationen/strategische-partnerschaften/princeton-university/2862c15b04-1713777165/20190424-cl-dja-010-2-2-2500x-q85.jpg');
+}
+
+
+section {
+    margin: 7%;
+    background-color: var(--tan);
+    color:black;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    height: max-content;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+    gap:.5rem;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+
+}
+  
+   
+  .graph-display{
+    width:50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .graph {
+    height: 100%;
+    display:none;
+  }
+  
+
+.section-container {
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+    color: white;
+    background-color: #EFE5DA;
+    width:100%;
+    justify-content: center;
+ /* Ensures the background is behind other elements */
+}
+button {
+  font-family: sofia-pro, sans-serif;
+  border-width: 0px;
+  border-radius: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  /* padding: 40px 40px; */
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  background-color: var(--orange);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: large;
+
+  cursor: pointer;
+  color: black;
+}
+
+
+.graph-button-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: max-content;
+    flex-direction: row;
+  
+}
+@media screen and (max-width: 920px) {
+  .graph-button-container {
+    flex-direction: column;
+    width: 100%;
+    gap : 1rem;
+  }
+  
+  
+}
+@media screen and (max-width: 920px) {
+  .graph-display {
+      width: 100%;
+  }
+  
+}
+@media screen and (max-width: 920px) {
+  .button-container {
+      width: 100%;
+  }
+  
+}
+
+
+.graph-button {
+    background-color: #888;
+}
+
+.graph-button.active {
+    background-color: var(--orange);
+}
+a {
+  color: var(--orange);
+  text-decoration: none;
+}
+button:hover {
+  background-color: rgb(255, 160, 37);
+}
+/* Collapsible Nav Container */
+.collapsible-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50px; /* Collapsed width */
+  background-color: transparent; /* Make background transparent when collapsed */
+  border-right: none; /* Remove border when collapsed */
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, border-right 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the arrow vertically */
+  align-items: center;
+}
+
+/* Expanded state */
+.collapsible-nav.expanded {
+  background-color: var(--tan); /* Add background when expanded */
+  border-right: 1px solid black; /* Add border when expanded */
+  color: black;
+}
+
+/* Toggle Button */
+.nav-toggle {
+  position: relative;
+  color:black;
+ 
+   /* Centered within the container */
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the arrow when expanded */
+.nav-toggle.expanded {
+  transform: rotate(180deg);
+}
+
+/* Nav Content */
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 1rem;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show content when expanded */
+.collapsible-nav.expanded .nav-content {
+  opacity: 1;
+}
+
+
+
+/* for demo.html */
+#hero {
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  background: url('https://www.princeton.edu//sites/default/files/images/2017/06/20060425_NassauHall_JJ_IMG_5973.jpg') center/cover no-repeat;
+  background-color: transparent;
+  transition: background-color 2s ease;
+  border-radius: 0 !important;
+}
+
+#hero h1 {
+  margin-bottom: 1rem;
+}
+
+#textBlock {
+  font-size: 145%;
+  text-align: center;
+}
+
+#intro-overlay {
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #EFE5DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#intro-overlay h1 {
+    font-size: 3rem;
+    color: var(--orange, #e67e22);
+    font-family: sofia-pro, sans-serif;
+    letter-spacing: 2px;
+}
+
+body.intro-hidden #intro-overlay {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body.intro-hidden #main-content {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#main-content {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+
+/* ****** the css here makes the buttons stay at the top so we don't visibly see the page change ********** */
+#Demographics, 
+#Academics, 
+#About, 
+#Views, 
+#College-Life, 
+#After-Princeton {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* was center */
+}
+
+section {
+      align-items: center;
+}
+
+/* REPLACE your later .graph-button-container block with this */
+.graph-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;   /* was end */
+  align-items: flex-start;        /* was center */
+  align-content: flex-start;      /* helps when wrapping */
+  gap: 1rem;                      /* optional */
+  height: auto;                   /* not max-content/100% */
+}
+
+/* Tweak the buttons column */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  width: 50%;
+  /* REMOVE this: height: 100%; */
+  height: auto;                   /* let it shrink to its content */
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+/* ****** ********** */
+
+
+
+/* Making credits more centered */
+.credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center everything horizontally */
+  text-align: center;   /* center text inside */
+  font-size: 1.5rem;
+}
+
+.credits strong {
+  margin-top: 1rem;     /* space above each title */
+}
+
+.credits ul {
+  list-style: none;     /* remove bullets */
+  margin: 0.25rem 0 1rem 0; /* spacing above/below lists */
+  padding: 0;
+}
