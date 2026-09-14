@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Frosh Survey 2030 | The Daily Princetonian</title>
+    <meta name="description"
+          content="The Daily Princetonian's survey of the Princeton Class of 2030.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url"
+          content="https://projects.dailyprincetonian.com/senior-survey-2030/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frosh Survey 2030">
+    <meta property="og:description"
+          content="The Daily Princetonian's survey of the Princeton Class of 2030.">
+    <meta property="og:image"
+          content="https://s3.amazonaws.com/snwceomedia/pri/016a2c3c-9cd4-4906-94d8-c05bba51a32c.original.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon"
+          type="image/png"
+          href="https://dirgyzwl2hnqq.cloudfront.net/ff9419fb986f760c1b0b24d4b9046051/dist/img/favicons/apple-icon-57x57.png">
+
+    <!-- Princetonian fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/gkx8zdh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kha5kwj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mhl8zjo.css">
+
+    <!-- D3 -->
+    <link rel="stylesheet" href="globe-style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="globe-script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Opening title -->
+
+    <header class="masthead">
+        <div class="masthead-left">
+            <span class="eyebrow">The Daily Princetonian</span>
+            <span class="rule"></span>
+            <span class="edition">Frosh Survey</span>
+        </div>
+
+        <div class="masthead-year">2030</div>
+    </header>
+
+
+    <!-- Main interactive area -->
+
+    <main class="globe-page">
+
+        <section class="intro">
+
+            <p class="kicker">The Great Class of</p>
+
+            <h1>
+                Frosh<br>
+                <em>Survey</em>
+                <span>2030</span>
+            </h1>
+
+            <p class="intro-copy">
+                Meet Princeton's newest class.
+                Drag the globe to explore what makes
+                the fresh '30s tick.
+            </p>
+
+            <div class="interaction-hint">
+                <span class="mouse-icon">
+                    <span></span>
+                </span>
+                <span>Drag to explore</span>
+            </div>
+
+        </section>
+
+
+        <!-- Globe -->
+
+        <section class="globe-stage" aria-label="Interactive survey sections">
+
+            <div class="globe-shadow"></div>
+
+            <div id="globe"></div>
+
+            <div class="globe-caption">
+                <span>Princeton, NJ</span>
+                <span class="caption-line"></span>
+                <span>Class of 2030</span>
+            </div>
+
+        </section>
+
+
+        <!-- Landmark navigation -->
+
+        <nav class="section-nav" aria-label="Survey sections">
+
+            <a href="demo.html"
+               class="section-link"
+               data-section="Demographics">
+
+                <span class="section-number">01</span>
+                <span class="section-name">Demographics</span>
+                <span class="section-arrow">↗</span>
+
+            </a>
+
+            <a href="life.html"
+               class="section-link"
+               data-section="Lifestyle">
+
+                <span class="section-number">02</span>
+                <span class="section-name">Lifestyle</span>
+                <span class="section-arrow">↗</span>
+
+            </a>
+
+            <a href="academics.html"
+               class="section-link"
+               data-section="Academics">
+
+                <span class="section-number">03</span>
+                <span class="section-name">Academics</span>
+                <span class="section-arrow">↗</span>
+
+            </a>
+
+            <a href="views.html"
+               class="section-link"
+               data-section="Views">
+
+                <span class="section-number">04</span>
+                <span class="section-name">Views</span>
+                <span class="section-arrow">↗</span>
+
+            </a>
+
+            <a href="about.html"
+               class="section-link"
+               data-section="About">
+
+                <span class="section-number">05</span>
+                <span class="section-name">About</span>
+                <span class="section-arrow">↗</span>
+
+            </a>
+
+        </nav>
+
+    </main>
+
+
+    <!-- Intro copy -->
+
+    <section class="welcome">
+
+        <div class="welcome-label">
+            <span>About the survey</span>
+        </div>
+
+        <div class="welcome-content">
+
+            <h2>
+                Welcome to the<br>
+                <em>Orange Bubble.</em>
+            </h2>
+
+            <div class="welcome-text">
+
+                <p>
+                    Welcome to The Daily Princetonian's fifth annual survey
+                    of the freshman class. The data within this project tell
+                    a bit of the story of the Great Class of 2030.
+                </p>
+
+                <p>
+                    Our project seeks to dive into a holistic profile of
+                    the University's youngest class. While the University
+                    publicly reports demographic and academic information,
+                    other data — such as drinking habits, relationships,
+                    or intentions to make a lot of money — are harder
+                    to find publicly.
+                </p>
+
+                <p>
+                    We invite you to browse our findings with a curious
+                    mindset. Click on every graph, select every dropdown,
+                    and really get to know the fresh '30s.
+                </p>
+
+                <p>
+                    To the Class of 2030, thank you to each member of your
+                    class who filled out our survey, telling their unique
+                    story. We hope you enjoy clicking through the various
+                    visualizations as much as we did.
+                </p>
+
+                <p class="signature">
+                    Best,<br>
+                    Vincent Etherton '26 and Alexa Wingate '27
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div>
+            <span>The Daily Princetonian</span>
+            <span>·</span>
+            <span>Frosh Survey 2030</span>
+        </div>
+
+        <a href="https://forms.gle/PLtdF9EbrEiwUbfD7">
+            Have an idea for a graph? Tell us →
+        </a>
+
+    </footer>
+
+
+    <div class="tooltip" id="tooltip">
+        <span class="tooltip-kicker">Explore</span>
+        <strong id="tooltip-title"></strong>
+        <span class="tooltip-action">Click to enter →</span>
+    </div>
+
+</body>
+</html>

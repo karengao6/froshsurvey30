@@ -1,0 +1,785 @@
+/* =========================================================
+   FROSH SURVEY 2030
+   Interactive Globe Homepage
+   ========================================================= */
+
+   :root {
+    --orange: #e77500;
+    --orange-dark: #c95f00;
+    --ink: #171717;
+    --paper: #f5f1e9;
+    --paper-dark: #e8e1d5;
+    --blue: #17384d;
+    --muted: #77736d;
+    --line: rgba(23, 23, 23, 0.18);
+
+    --serif: "adobe-caslon-pro", Georgia, serif;
+    --sans: "neue-haas-grotesk-text", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   MASTHEAD
+   ========================================================= */
+
+.masthead {
+    position: absolute;
+    z-index: 20;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 26px 34px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    pointer-events: none;
+}
+
+.masthead-left {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+.rule {
+    width: 35px;
+    height: 1px;
+    background: var(--ink);
+}
+
+.masthead-year {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.globe-page {
+    position: relative;
+
+    height: 100svh;
+    min-height: 680px;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.intro {
+    position: absolute;
+    z-index: 10;
+
+    left: clamp(28px, 6vw, 100px);
+    top: 50%;
+
+    width: min(330px, 30vw);
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+}
+
+.kicker {
+    margin: 0 0 18px;
+
+    color: var(--orange);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    margin: 0;
+
+    font-family: var(--serif);
+    font-size: clamp(55px, 6vw, 95px);
+    font-weight: 400;
+
+    line-height: 0.83;
+    letter-spacing: -0.045em;
+}
+
+.intro h1 em {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.intro h1 span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.intro-copy {
+    max-width: 265px;
+
+    margin: 35px 0 0;
+
+    color: #4d4a46;
+
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.interaction-hint {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 35px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.mouse-icon {
+    width: 17px;
+    height: 25px;
+
+    border: 1px solid var(--muted);
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.mouse-icon span {
+    position: absolute;
+
+    top: 5px;
+    left: 50%;
+
+    width: 2px;
+    height: 5px;
+
+    background: var(--orange);
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   GLOBE
+   ========================================================= */
+
+.globe-stage {
+    position: absolute;
+
+    left: 48%;
+    top: 50%;
+
+    width: min(68vw, 850px);
+    height: min(68vw, 850px);
+
+    transform: translate(-50%, -50%);
+}
+
+#globe {
+    position: absolute;
+
+    inset: 0;
+
+    cursor: grab;
+}
+
+#globe:active {
+    cursor: grabbing;
+}
+
+#globe svg {
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+
+/* subtle shadow under the Earth */
+
+.globe-shadow {
+    position: absolute;
+
+    left: 50%;
+    bottom: 4%;
+
+    width: 55%;
+    height: 7%;
+
+    background: rgba(0, 0, 0, 0.09);
+
+    filter: blur(24px);
+
+    transform: translateX(-50%);
+}
+
+
+/* geographic sphere */
+
+.globe-ocean {
+    fill: #e9e3d8;
+}
+
+.globe-land {
+    fill: #c9c2b6;
+    stroke: #f5f1e9;
+    stroke-width: 0.55px;
+}
+
+.globe-graticule {
+    fill: none;
+
+    stroke: rgba(23, 23, 23, 0.10);
+    stroke-width: 0.45px;
+}
+
+.globe-outline {
+    fill: none;
+
+    stroke: rgba(23, 23, 23, 0.32);
+    stroke-width: 1px;
+}
+
+
+/* =========================================================
+   LANDMARKS
+   ========================================================= */
+
+.landmark {
+    cursor: pointer;
+}
+
+.landmark-dot {
+    fill: var(--orange);
+
+    stroke: var(--paper);
+    stroke-width: 2px;
+
+    transition:
+        r 180ms ease,
+        fill 180ms ease,
+        stroke-width 180ms ease;
+}
+
+.landmark-ring {
+    fill: none;
+
+    stroke: var(--orange);
+    stroke-width: 1px;
+
+    opacity: 0;
+
+    transform-origin: center;
+}
+
+.landmark-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    fill: var(--ink);
+
+    pointer-events: none;
+}
+
+.landmark:hover .landmark-dot {
+    fill: var(--ink);
+    stroke-width: 3px;
+}
+
+.landmark:hover .landmark-ring {
+    opacity: 0.8;
+
+    animation: pulse 1.2s ease-out infinite;
+}
+
+.landmark.is-active .landmark-dot {
+    fill: var(--ink);
+}
+
+.landmark.is-active .landmark-ring {
+    opacity: 0.8;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   GLOBE CAPTION
+   ========================================================= */
+
+.globe-caption {
+    position: absolute;
+
+    left: 50%;
+    bottom: 3%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+}
+
+.caption-line {
+    width: 24px;
+    height: 1px;
+
+    background: var(--orange);
+}
+
+
+/* =========================================================
+   SECTION NAV
+   ========================================================= */
+
+.section-nav {
+    position: absolute;
+    z-index: 10;
+
+    right: clamp(28px, 5vw, 80px);
+    top: 50%;
+
+    width: 190px;
+
+    transform: translateY(-50%);
+}
+
+.section-link {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 28px 1fr 18px;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--line);
+
+    transition:
+        color 180ms ease,
+        padding 180ms ease;
+}
+
+.section-link:first-child {
+    border-top: 1px solid var(--line);
+}
+
+.section-number {
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+.section-name {
+    font-family: var(--serif);
+    font-size: 18px;
+}
+
+.section-arrow {
+    color: var(--orange);
+
+    font-size: 14px;
+
+    opacity: 0;
+
+    transform: translateX(-5px);
+
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+}
+
+.section-link:hover {
+    padding-left: 7px;
+    color: var(--orange);
+}
+
+.section-link:hover .section-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================================================
+   TOOLTIP
+   ========================================================= */
+
+.tooltip {
+    position: fixed;
+    z-index: 50;
+
+    display: none;
+
+    min-width: 155px;
+
+    padding: 13px 15px;
+
+    background: var(--ink);
+    color: var(--paper);
+
+    pointer-events: none;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.15);
+}
+
+.tooltip-kicker {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--orange);
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.tooltip strong {
+    display: block;
+
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tooltip-action {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #aaa;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   WELCOME SECTION
+   ========================================================= */
+
+.welcome {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    min-height: 650px;
+
+    padding: 110px clamp(28px, 6vw, 100px);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.welcome-label {
+    padding-top: 10px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: .13em;
+    text-transform: uppercase;
+
+    color: var(--orange);
+}
+
+.welcome-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8vw;
+}
+
+.welcome h2 {
+    margin: 0;
+
+    font-family: var(--serif);
+    font-size: clamp(45px, 5vw, 75px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -.04em;
+}
+
+.welcome h2 em {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.welcome-text {
+    max-width: 500px;
+
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.welcome-text p {
+    margin: 0 0 22px;
+}
+
+.signature {
+    margin-top: 45px !important;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 25px clamp(28px, 6vw, 100px);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+footer > div {
+    display: flex;
+    gap: 8px;
+}
+
+footer a {
+    color: var(--orange);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .masthead {
+        padding: 20px;
+    }
+
+    .masthead-left .rule,
+    .masthead-left .edition {
+        display: none;
+    }
+
+    .globe-page {
+        min-height: 800px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: auto;
+
+        padding: 100px 25px 0;
+
+        transform: none;
+
+        text-align: center;
+    }
+
+    .intro-copy {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .interaction-hint {
+        justify-content: center;
+    }
+
+    .globe-stage {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 115vw;
+        height: 115vw;
+
+        max-width: 650px;
+        max-height: 650px;
+
+        margin: -20px auto -80px;
+
+        transform: none;
+    }
+
+    .section-nav {
+        position: relative;
+
+        right: auto;
+        top: auto;
+
+        width: calc(100% - 40px);
+
+        margin: 0 auto 35px;
+
+        transform: none;
+    }
+
+    .section-link {
+        padding: 14px 0;
+    }
+
+    .section-name {
+        font-size: 17px;
+    }
+
+    .welcome {
+        display: block;
+
+        padding: 75px 25px;
+    }
+
+    .welcome-label {
+        margin-bottom: 45px;
+    }
+
+    .welcome-content {
+        display: block;
+    }
+
+    .welcome h2 {
+        margin-bottom: 50px;
+    }
+
+    .welcome-text {
+        font-size: 17px;
+    }
+
+    footer {
+        display: block;
+
+        padding: 25px;
+    }
+
+    footer > div {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .intro h1 {
+        font-size: 60px;
+    }
+
+    .globe-stage {
+        width: 125vw;
+        height: 125vw;
+
+        margin-top: -10px;
+    }
+
+    .globe-caption {
+        bottom: 5%;
+    }
+}
