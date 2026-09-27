@@ -13,6 +13,16 @@
     --muted: #77736d;
     --line: rgba(23, 23, 23, 0.18);
 
+    /* shared with the section pages' palette */
+    --yellow: #eeaf61;
+    --red: #ee5d6c;
+    --pink: #ce4993;
+    --purple: #6a0d83;
+    --tan: #f2b46f;
+    --olive: #7e8e56;
+    --darker-olive: #687542;
+    --lighter-olive: #b7c88c;
+
     --serif: "adobe-caslon-pro", Georgia, serif;
     --sans: "neue-haas-grotesk-text", Arial, sans-serif;
 }
@@ -131,7 +141,7 @@ a {
 .kicker {
     margin: 0 0 18px;
 
-    color: var(--orange);
+    color: var(--darker-olive);
 
     font-size: 11px;
     font-weight: 700;
@@ -152,21 +162,8 @@ a {
 }
 
 .intro h1 em {
-    color: var(--orange);
+    color: var(--darker-olive);
     font-style: italic;
-}
-
-.intro h1 span {
-    display: block;
-
-    margin-top: 8px;
-
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 700;
-
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
 }
 
 .intro-copy {
@@ -287,33 +284,28 @@ a {
 /* geographic sphere */
 
 .globe-ocean {
-    fill: #ddd4c1;
+    fill: var(--lighter-olive);
 }
 
 .globe-land {
-    fill: #a99b83;
-    stroke: #f5f1e9;
-    stroke-width: 0.55px;
+    fill: var(--darker-olive);
+    stroke: var(--lighter-olive);
+    stroke-width: 0.6px;
 }
 
 .globe-graticule {
     fill: none;
 
-    stroke: rgba(23, 23, 23, 0.09);
+    stroke: rgba(104, 117, 66, 0.22);
     stroke-width: 0.45px;
-}
-
-.globe-shade {
-    mix-blend-mode: multiply;
-    pointer-events: none;
 }
 
 .globe-outline {
     fill: none;
 
-    stroke: var(--ink);
-    stroke-width: 1px;
-    stroke-opacity: 0.35;
+    stroke: var(--darker-olive);
+    stroke-width: 1.25px;
+    stroke-opacity: 0.55;
 }
 
 
@@ -329,6 +321,11 @@ a {
     display: none;
 }
 
+.landmark-hit {
+    fill: transparent;
+    pointer-events: all;
+}
+
 .landmark-dot {
     fill: var(--orange);
 
@@ -341,53 +338,26 @@ a {
         stroke-width 180ms ease;
 }
 
-.landmark-ring {
-    fill: none;
-
-    stroke: var(--orange);
-    stroke-width: 1px;
-
-    opacity: 0.65;
-
-    transform-origin: center;
-
-    animation: pulse 2.2s ease-out infinite;
-}
-
 .landmark-label {
     font-family: var(--sans);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
 
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    fill: var(--blue);
+    fill: var(--ink);
+    stroke: var(--paper);
+    stroke-width: 3px;
+    paint-order: stroke fill;
 
     pointer-events: none;
 }
 
 .landmark:hover .landmark-dot {
-    fill: var(--ink);
+    fill: var(--red);
     stroke-width: 3px;
-}
-
-.landmark:hover .landmark-ring {
-    opacity: 0.9;
-
-    animation-duration: 1s;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.8);
-        opacity: 0.7;
-    }
-
-    100% {
-        transform: scale(2.6);
-        opacity: 0;
-    }
+    r: 6.5;
 }
 
 
@@ -418,7 +388,7 @@ a {
 
     margin-bottom: 3px;
 
-    color: var(--orange);
+    color: var(--lighter-olive);
 
     font-size: 8px;
     font-weight: 700;
@@ -521,13 +491,13 @@ a {
 }
 
 .section-menu-close:hover {
-    color: var(--orange);
+    color: var(--darker-olive);
 }
 
 .section-menu-kicker {
     margin: 0 0 8px;
 
-    color: var(--orange);
+    color: var(--darker-olive);
 
     font-size: 10px;
     font-weight: 700;
@@ -591,7 +561,7 @@ a {
 }
 
 .section-arrow {
-    color: var(--orange);
+    color: var(--darker-olive);
 
     font-size: 14px;
 
@@ -606,7 +576,7 @@ a {
 
 .section-link:hover {
     padding-left: 7px;
-    color: var(--orange);
+    color: var(--darker-olive);
 }
 
 .section-link:hover .section-arrow {
@@ -621,7 +591,8 @@ a {
 
 .welcome {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: minmax(230px, 32%) 1fr;
+    gap: 4vw;
 
     min-height: 650px;
 
@@ -630,32 +601,30 @@ a {
     border-bottom: 1px solid var(--line);
 }
 
-.welcome-label {
+.welcome-heading {
     padding-top: 10px;
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: .13em;
-    text-transform: uppercase;
-
-    color: var(--orange);
 }
 
-.welcome-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8vw;
+.welcome-label {
+    margin: 0 0 22px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    color: var(--darker-olive);
 }
 
 .welcome h2 {
     margin: 0;
 
     font-family: var(--serif);
-    font-size: clamp(45px, 5vw, 75px);
+    font-size: clamp(38px, 4vw, 58px);
     font-weight: 400;
-    line-height: .9;
-    letter-spacing: -.04em;
+    line-height: .95;
+    letter-spacing: -.03em;
 }
 
 .welcome h2 em {
@@ -664,7 +633,9 @@ a {
 }
 
 .welcome-text {
-    max-width: 500px;
+    max-width: 620px;
+
+    padding-top: 10px;
 
     font-family: var(--serif);
     font-size: 18px;
@@ -705,7 +676,7 @@ footer > div {
 }
 
 footer a {
-    color: var(--orange);
+    color: var(--olive);
 }
 
 footer a:hover {
@@ -792,10 +763,6 @@ footer a:hover {
         margin-bottom: 45px;
     }
 
-    .welcome-content {
-        display: block;
-    }
-
     .welcome h2 {
         margin-bottom: 50px;
     }
@@ -836,8 +803,7 @@ footer a:hover {
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-    .mouse-icon span,
-    .landmark-ring {
+    .mouse-icon span {
         animation: none;
     }
 }

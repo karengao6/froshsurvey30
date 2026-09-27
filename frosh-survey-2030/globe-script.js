@@ -42,28 +42,10 @@
         .attr('role', 'img')
         .attr('aria-label', 'Draggable globe. Find and click Princeton to open the survey sections.');
 
-    const defs = svg.append('defs');
-
-    const shadeGradient = defs.append('radialGradient')
-        .attr('id', 'globe-shade')
-        .attr('cx', '32%')
-        .attr('cy', '28%')
-        .attr('r', '78%');
-
-    shadeGradient.append('stop').attr('offset', '0%').attr('stop-color', '#ffffff').attr('stop-opacity', 0.4);
-    shadeGradient.append('stop').attr('offset', '52%').attr('stop-color', '#ffffff').attr('stop-opacity', 0);
-    shadeGradient.append('stop').attr('offset', '100%').attr('stop-color', '#17384d').attr('stop-opacity', 0.4);
-
     svg.append('path').datum(sphere).attr('class', 'globe-ocean').attr('d', path);
     svg.append('path').datum(graticule).attr('class', 'globe-graticule').attr('d', path);
 
     const landLayer = svg.append('g').attr('class', 'globe-land-layer');
-
-    svg.append('path')
-        .datum(sphere)
-        .attr('class', 'globe-shade')
-        .attr('d', path)
-        .attr('fill', 'url(#globe-shade)');
 
     svg.append('path').datum(sphere).attr('class', 'globe-outline').attr('d', path);
 
@@ -96,13 +78,26 @@
             .join((enter) => {
                 const group = enter.append('g').attr('class', 'landmark');
 
-                group.append('circle').attr('class', 'landmark-ring').attr('r', 6);
+                // Hit rect is drawn first (so it sits invisibly behind the
+                // dot and label) and is sized below to cover both, plus
+                // some breathing room — not just the tiny dot.
+                const hit = group.append('rect').attr('class', 'landmark-hit');
+
                 group.append('circle').attr('class', 'landmark-dot').attr('r', 5);
                 group.append('text')
                     .attr('class', 'landmark-label')
-                    .attr('x', 11)
+                    .attr('x', 13)
                     .attr('y', 4)
                     .text(PRINCETON.name);
+
+                const bbox = group.node().getBBox();
+                const pad = 16;
+
+                hit
+                    .attr('x', bbox.x - pad)
+                    .attr('y', bbox.y - pad)
+                    .attr('width', bbox.width + pad * 2)
+                    .attr('height', bbox.height + pad * 2);
 
                 return group;
             });
@@ -140,7 +135,6 @@
     function render() {
         svg.select('.globe-ocean').attr('d', path);
         svg.select('.globe-graticule').attr('d', path);
-        svg.select('.globe-shade').attr('d', path);
         svg.select('.globe-outline').attr('d', path);
 
         if (landFeatures) {
