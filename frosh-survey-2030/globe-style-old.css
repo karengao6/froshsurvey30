@@ -219,13 +219,6 @@ a {
     background: var(--orange);
 
     transform: translateX(-50%);
-
-    animation: scroll-hint 1.6s ease-in-out infinite;
-}
-
-@keyframes scroll-hint {
-    0%, 100% { transform: translate(-50%, 0); opacity: 1; }
-    50% { transform: translate(-50%, 5px); opacity: 0.4; }
 }
 
 
@@ -253,7 +246,7 @@ a {
     cursor: grab;
 }
 
-#globe.is-grabbing {
+#globe:active {
     cursor: grabbing;
 }
 
@@ -287,11 +280,11 @@ a {
 /* geographic sphere */
 
 .globe-ocean {
-    fill: #ddd4c1;
+    fill: #e9e3d8;
 }
 
 .globe-land {
-    fill: #a99b83;
+    fill: #c9c2b6;
     stroke: #f5f1e9;
     stroke-width: 0.55px;
 }
@@ -299,34 +292,24 @@ a {
 .globe-graticule {
     fill: none;
 
-    stroke: rgba(23, 23, 23, 0.09);
+    stroke: rgba(23, 23, 23, 0.10);
     stroke-width: 0.45px;
-}
-
-.globe-shade {
-    mix-blend-mode: multiply;
-    pointer-events: none;
 }
 
 .globe-outline {
     fill: none;
 
-    stroke: var(--ink);
+    stroke: rgba(23, 23, 23, 0.32);
     stroke-width: 1px;
-    stroke-opacity: 0.35;
 }
 
 
 /* =========================================================
-   LANDMARK (Princeton)
+   LANDMARKS
    ========================================================= */
 
 .landmark {
     cursor: pointer;
-}
-
-.landmark.is-hidden {
-    display: none;
 }
 
 .landmark-dot {
@@ -347,11 +330,9 @@ a {
     stroke: var(--orange);
     stroke-width: 1px;
 
-    opacity: 0.65;
+    opacity: 0;
 
     transform-origin: center;
-
-    animation: pulse 2.2s ease-out infinite;
 }
 
 .landmark-label {
@@ -362,7 +343,7 @@ a {
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    fill: var(--blue);
+    fill: var(--ink);
 
     pointer-events: none;
 }
@@ -373,21 +354,139 @@ a {
 }
 
 .landmark:hover .landmark-ring {
-    opacity: 0.9;
+    opacity: 0.8;
 
-    animation-duration: 1s;
+    animation: pulse 1.2s ease-out infinite;
+}
+
+.landmark.is-active .landmark-dot {
+    fill: var(--ink);
+}
+
+.landmark.is-active .landmark-ring {
+    opacity: 0.8;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(0.8);
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
     100% {
-        transform: scale(2.6);
+        transform: scale(2.4);
         opacity: 0;
     }
+}
+
+
+/* =========================================================
+   GLOBE CAPTION
+   ========================================================= */
+
+.globe-caption {
+    position: absolute;
+
+    left: 50%;
+    bottom: 3%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+}
+
+.caption-line {
+    width: 24px;
+    height: 1px;
+
+    background: var(--orange);
+}
+
+
+/* =========================================================
+   SECTION NAV
+   ========================================================= */
+
+.section-nav {
+    position: absolute;
+    z-index: 10;
+
+    right: clamp(28px, 5vw, 80px);
+    top: 50%;
+
+    width: 190px;
+
+    transform: translateY(-50%);
+}
+
+.section-link {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 28px 1fr 18px;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--line);
+
+    transition:
+        color 180ms ease,
+        padding 180ms ease;
+}
+
+.section-link:first-child {
+    border-top: 1px solid var(--line);
+}
+
+.section-number {
+    color: var(--muted);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+}
+
+.section-name {
+    font-family: var(--serif);
+    font-size: 18px;
+}
+
+.section-arrow {
+    color: var(--orange);
+
+    font-size: 14px;
+
+    opacity: 0;
+
+    transform: translateX(-5px);
+
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+}
+
+.section-link:hover {
+    padding-left: 7px;
+    color: var(--orange);
+}
+
+.section-link:hover .section-arrow {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
@@ -447,171 +546,6 @@ a {
 
     letter-spacing: .08em;
     text-transform: uppercase;
-}
-
-
-/* =========================================================
-   SECTION MENU
-   Opens when Princeton is clicked on the globe.
-   ========================================================= */
-
-.section-menu {
-    position: fixed;
-    z-index: 60;
-    inset: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: opacity 220ms ease, visibility 220ms ease;
-}
-
-.section-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-}
-
-.section-menu-backdrop {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(23, 23, 23, 0.86);
-}
-
-.section-menu-panel {
-    position: relative;
-    z-index: 1;
-
-    width: min(460px, 88vw);
-
-    padding: 46px 42px 30px;
-
-    background: var(--paper);
-    border: 1px solid var(--ink);
-
-    transform: translateY(10px);
-    transition: transform 220ms ease;
-}
-
-.section-menu.is-open .section-menu-panel {
-    transform: translateY(0);
-}
-
-.section-menu-close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-
-    width: 30px;
-    height: 30px;
-
-    border: none;
-    background: transparent;
-
-    font-size: 22px;
-    line-height: 1;
-    font-family: var(--sans);
-
-    color: var(--muted);
-    cursor: pointer;
-}
-
-.section-menu-close:hover {
-    color: var(--orange);
-}
-
-.section-menu-kicker {
-    margin: 0 0 8px;
-
-    color: var(--orange);
-
-    font-size: 10px;
-    font-weight: 700;
-
-    letter-spacing: .13em;
-    text-transform: uppercase;
-}
-
-.section-menu-title {
-    margin: 0 0 26px;
-
-    font-family: var(--serif);
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-}
-
-.section-menu-links {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* =========================================================
-   SECTION LINKS
-   Shared row style used inside the section menu.
-   ========================================================= */
-
-.section-link {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: 28px 1fr 18px;
-    align-items: center;
-
-    padding: 15px 0;
-
-    border-bottom: 1px solid var(--line);
-
-    transition:
-        color 180ms ease,
-        padding 180ms ease;
-}
-
-.section-link:first-child {
-    border-top: 1px solid var(--line);
-}
-
-.section-number {
-    color: var(--muted);
-
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 0.08em;
-}
-
-.section-name {
-    font-family: var(--serif);
-    font-size: 18px;
-}
-
-.section-arrow {
-    color: var(--orange);
-
-    font-size: 14px;
-
-    opacity: 0;
-
-    transform: translateX(-5px);
-
-    transition:
-        opacity 180ms ease,
-        transform 180ms ease;
-}
-
-.section-link:hover {
-    padding-left: 7px;
-    color: var(--orange);
-}
-
-.section-link:hover .section-arrow {
-    opacity: 1;
-    transform: translateX(0);
 }
 
 
@@ -729,7 +663,7 @@ footer a:hover {
     }
 
     .globe-page {
-        min-height: 780px;
+        min-height: 800px;
         height: auto;
 
         display: flex;
@@ -749,7 +683,6 @@ footer a:hover {
         transform: none;
 
         text-align: center;
-        pointer-events: auto;
     }
 
     .intro-copy {
@@ -773,13 +706,30 @@ footer a:hover {
         max-width: 650px;
         max-height: 650px;
 
-        margin: -20px auto 0;
+        margin: -20px auto -80px;
 
         transform: none;
     }
 
-    .section-menu-panel {
-        padding: 42px 26px 26px;
+    .section-nav {
+        position: relative;
+
+        right: auto;
+        top: auto;
+
+        width: calc(100% - 40px);
+
+        margin: 0 auto 35px;
+
+        transform: none;
+    }
+
+    .section-link {
+        padding: 14px 0;
+    }
+
+    .section-name {
+        font-size: 17px;
     }
 
     .welcome {
@@ -828,16 +778,8 @@ footer a:hover {
 
         margin-top: -10px;
     }
-}
 
-
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-    .mouse-icon span,
-    .landmark-ring {
-        animation: none;
+    .globe-caption {
+        bottom: 5%;
     }
 }
