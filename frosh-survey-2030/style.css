@@ -176,7 +176,7 @@ border-radius: 15px; /* Rounds the corners */
 }
 footer {
 
-  background-color: #EFE5DA;
+  background-color: #dcefda;
   color: black;
   text-align: center;
   padding: 0rem;
@@ -309,7 +309,7 @@ section {
     
     text-align: center;
     color: white;
-    background-color: #EFE5DA;
+    background-color: #dcefda;
     width:100%;
     justify-content: center;
  /* Ensures the background is behind other elements */
@@ -398,7 +398,7 @@ button:hover {
 
 /* Expanded state */
 .collapsible-nav.expanded {
-  background-color: var(--tan); /* Add background when expanded */
+  background-color: #dcefda; /* Add background when expanded */
   border-right: 1px solid black; /* Add border when expanded */
   color: black;
 }
@@ -469,7 +469,7 @@ button:hover {
     position: fixed;
     z-index: 9999;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: #EFE5DA;
+    background: #dcefda;
     display: flex;
     align-items: center;
     justify-content: center;
