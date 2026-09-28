@@ -372,8 +372,8 @@ button {
     background-color: var(--olive);
 }
 a {
-  color: var(--olive);
-  text-decoration: none;
+  color: #383e24;
+  text-decoration: underline;
 }
 button:hover {
   background-color: var(--darker-olive);
